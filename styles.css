@@ -1,0 +1,47 @@
+:root {
+  --primary-color: #1F3B73;
+  --secondary-color: #F5F6FA;
+  --accent-color: #F9B233;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.btn-warning {
+  background-color: var(--accent-color) !important;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #e8a022 !important;
+}
+
+/* Sticky navbar shadow */
+#navbar {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#navbar.scrolled {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Smooth section padding */
+section {
+  scroll-margin-top: 70px; /* offset for fixed navbar */
+}
