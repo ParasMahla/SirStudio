@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIR STUDIO | Expert Academic & Career Services</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Tailwind custom configuration
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#1F3B73",
+            secondary: "#F5F6FA",
+            accent: "#F9B233",
+          },
+          fontFamily: {
+            poppins: ["Poppins", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+<body class="text-gray-800">
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full bg-white shadow z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="#home" class="text-primary text-xl font-bold">SIR STUDIO</a>
+      <nav class="space-x-4 hidden md:flex">
+        <a href="#services" class="hover:text-primary">Services</a>
+        <a href="#about" class="hover:text-primary">About</a>
+        <a href="#contact" class="hover:text-primary">Contact</a>
+      </nav>
+      <!-- Mobile menu button -->
+      <button id="menuBtn" class="md:hidden focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden bg-white shadow-inner hidden">
+      <a href="#services" class="block px-4 py-2 hover:bg-secondary">Services</a>
+      <a href="#about" class="block px-4 py-2 hover:bg-secondary">About</a>
+      <a href="#contact" class="block px-4 py-2 hover:bg-secondary">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="pt-24 bg-primary text-white">
+    <div class="container mx-auto px-4 py-20 text-center" data-aos="fade-up">
+      <h1 class="text-3xl md:text-5xl font-bold mb-4">Expert Academic & Career Services – Anytime, Anywhere</h1>
+      <p class="text-lg md:text-2xl mb-10">Research | Analysis | Assignments | Counselling | Support</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/91XXXXXXXXXX?text=Hi,%20I%20want%20to%20enquire%20about%20your%20academic%20services" target="_blank" class="bg-accent text-primary font-semibold px-6 py-3 rounded shadow hover:opacity-90">Request on WhatsApp</a>
+        <a href="mailto:Admin@sirstudio.com" class="border border-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-primary transition">Email Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 bg-secondary">
+    <div class="container mx-auto px-4" data-aos="fade-up">
+      <h2 class="text-2xl md:text-4xl font-bold text-center mb-12 text-primary">Our Services</h2>
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Service Card -->
+        <div class="bg-white rounded-lg shadow p-6 flex flex-col" data-aos="zoom-in" data-aos-delay="50">
+          <div class="text-accent mb-4">
+            <!-- Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 20l9-5-9-5-9 5 9 5z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12l9-5-9-5-9 5 9 5z" /></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Research Writing</h3>
+          <p class="flex-grow">Thesis, papers, and proposals crafted with precision.</p>
+          <a href="https://wa.me/91XXXXXXXXXX?text=Hi,%20I%20am%20interested%20in%20Research%20Writing%20services" target="_blank" class="mt-4 text-white bg-primary px-4 py-2 rounded hover:bg-accent transition">Enquire</a>
+        </div>
+        <!-- Repeat for each service -->
+        <div class="bg-white rounded-lg shadow p-6 flex flex-col" data-aos="zoom-in" data-aos-delay="100">
+          <div class="text-accent mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 11V7a4 4 0 018 0v4m1 4a2 2 0 11-2-2 2 2 0 012 2z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 17v-1a4 4 0 014-4h2a4 4 0 014 4v1" /></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Statistical Analysis</h3>
+          <p class="flex-grow">Data crunching with SPSS, R, and Excel for accurate insights.</p>
+          <a href="https://wa.me/91XXXXXXXXXX?text=Hi,%20I%20am%20interested%20in%20Statistical%20Analysis%20services" target="_blank" class="mt-4 text-white bg-primary px-4 py-2 rounded hover:bg-accent transition">Enquire</a>
+        </div>
+        <div class="bg-white rounded-lg shadow p-6 flex flex-col" data-aos="zoom-in" data-aos-delay="150">
+          <div class="text-accent mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9 5-9 5-9-5 9-5z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" /></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Academic Help</h3>
+          <p class="flex-grow">Assignments, notes, and projects for PG, UG, and school levels.</p>
+          <a href="https://wa.me/91XXXXXXXXXX?text=Hi,%20I%20am%20interested%20in%20Academic%20Help" target="_blank" class="mt-4 text-white bg-primary px-4 py-2 rounded hover:bg-accent transition">Enquire</a>
+        </div>
+        <div class="bg-white rounded-lg shadow p-6 flex flex-col" data-aos="zoom-in" data-aos-delay="200">
+          <div class="text-accent mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17l9-5-9-5v10z" /></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Career Counselling</h3>
+          <p class="flex-grow">Personalized sessions and resume building to launch your career.</p>
+          <a href="https://wa.me/91XXXXXXXXXX?text=Hi,%20I%20am%20interested%20in%20Career%20Counselling" target="_blank" class="mt-4 text-white bg-primary px-4 py-2 rounded hover:bg-accent transition">Enquire</a>
+        </div>
+        <div class="bg-white rounded-lg shadow p-6 flex flex-col" data-aos="zoom-in" data-aos-delay="250">
+          <div class="text-accent mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4h16v2H4zM4 10h16v2H4zM4 16h16v2H4z" /></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Exam & Admission Support</h3>
+          <p class="flex-grow">Coaching and guidance for exam preparations and forms.</p>
+          <a href="https://wa.me/91XXXXXXXXXX?text=Hi,%20I%20am%20interested%20in%20Exam%20and%20Admission%20Support" target="_blank" class="mt-4 text-white bg-primary px-4 py-2 rounded hover:bg-accent transition">Enquire</a>
+        </div>
+        <div class="bg-white rounded-lg shadow p-6 flex flex-col" data-aos="zoom-in" data-aos-delay="300">
+          <div class="text-accent mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4 -4" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22C6.48 22 2 17.52 2 12S6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z" /></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">CSR Activities</h3>
+          <p class="flex-grow">Educational training and awareness drives for communities.</p>
+          <a href="https://wa.me/91XXXXXXXXXX?text=Hi,%20I%20am%20interested%20in%20CSR%20Activities" target="_blank" class="mt-4 text-white bg-primary px-4 py-2 rounded hover:bg-accent transition">Enquire</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center" data-aos="fade-right">
+      <div class="lg:w-1/2 mb-8 lg:mb-0">
+        <img src="https://images.unsplash.com/photo-1581094332423-46e36099255b?auto=format&fit=crop&w=800&q=60" alt="Founder" class="rounded-lg shadow-lg" />
+      </div>
+      <div class="lg:w-1/2 lg:pl-12">
+        <h2 class="text-2xl md:text-4xl font-bold text-primary mb-4">About SIR STUDIO</h2>
+        <p class="mb-4">Founded by <strong>Dr. Sanjay</strong>, SIR STUDIO is dedicated to empowering students and professionals with top-notch academic and career services. Our mission is to bridge knowledge gaps and provide personalized support for your educational journey.</p>
+        <p class="mb-4">With years of experience and a passion for teaching, we strive to deliver excellence through research assistance, career counselling, and community-driven CSR initiatives.</p>
+        <ul class="list-disc pl-5 space-y-2">
+          <li>Mission: Deliver expert educational solutions globally.</li>
+          <li>Vision: Become the most trusted partner for academic and career success.</li>
+          <li>Values: Integrity, Innovation, Inclusivity.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-primary text-white">
+    <div class="container mx-auto px-4 text-center" data-aos="fade-up">
+      <h2 class="text-2xl md:text-4xl font-bold mb-6">Get in Touch</h2>
+      <p class="mb-8">We’re here to answer your queries and provide the support you need.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
+        <a href="https://wa.me/91XXXXXXXXXX?text=Hi,%20I%20want%20to%20enquire%20about%20your%20academic%20services" target="_blank" class="bg-accent text-primary font-semibold px-6 py-3 rounded shadow hover:opacity-90">Chat on WhatsApp</a>
+        <a href="mailto:Admin@sirstudio.com" class="border border-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-primary transition">Email Us</a>
+      </div>
+      <!-- Optional Contact Form using Formsubmit.co -->
+      <form action="https://formsubmit.co/Admin@sirstudio.com" method="POST" class="max-w-xl mx-auto space-y-4">
+        <!-- To disable CAPTCHA -->
+        <input type="hidden" name="_captcha" value="false">
+        <div class="flex flex-col md:flex-row gap-4">
+          <input type="text" name="name" required placeholder="Your Name" class="flex-1 p-3 rounded text-primary" />
+          <input type="email" name="email" required placeholder="Your Email" class="flex-1 p-3 rounded text-primary" />
+        </div>
+        <textarea name="message" required rows="4" placeholder="Your Message" class="w-full p-3 rounded text-primary"></textarea>
+        <button type="submit" class="w-full bg-accent text-primary font-semibold p-3 rounded hover:opacity-90">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-secondary py-6 text-center text-gray-600 text-sm">
+    <p>&copy; <span id="year"></span> SIR STUDIO by Dr. Sanjay. All Rights Reserved.</p>
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+    });
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Dynamic year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
