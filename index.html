@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SIR STUDIO | Expert Academic & Career Services</title>
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-19A6BqrjBktyo+rLsjcxKIQZt51E0H0VhnZVec6w8oM+L7gEiWV8I+VCS+Ilcsbu" crossorigin="anonymous">
   <!-- Font Awesome -->
@@ -18,110 +18,271 @@
 </head>
 <body>
   <!-- Navigation -->
-  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-primary py-3 fixed-top shadow-sm">
+  <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#hero">SIR STUDIO</a>
+      <a class="navbar-brand" href="#hero">
+        <div class="logo">
+          <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Graduation Cap Base -->
+            <path d="M20 8L32 14V22C32 26.4183 26.6274 30 20 30C13.3726 30 8 26.4183 8 22V14L20 8Z" fill="url(#gradient1)"/>
+            <!-- Tassel -->
+            <path d="M20 8L20 12M18 12L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <!-- Book -->
+            <rect x="12" y="18" width="16" height="8" rx="1" fill="url(#gradient2)"/>
+            <line x1="16" y1="20" x2="24" y2="20" stroke="currentColor" stroke-width="1"/>
+            <line x1="16" y1="22" x2="22" y2="22" stroke="currentColor" stroke-width="1"/>
+            <!-- Pen -->
+            <path d="M26 16L30 12L28 10L24 14" fill="url(#gradient3)"/>
+            <circle cx="30" cy="12" r="1" fill="currentColor"/>
+          </svg>
+          <span class="logo-text">SIR STUDIO</span>
+        </div>
+      </a>
+      
+      <div class="navbar-nav">
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="nav-link cta-button" href="https://wa.me/919999999999?text=Hi,%20I%20want%20to%20enquire%20about%20your%20academic%20services" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+          <span>Get Started</span>
+        </a>
+      </div>
+      
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      
       <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
+        <div class="navbar-nav">
+          <a class="nav-link" href="#services">Services</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link cta-button" href="https://wa.me/919999999999?text=Hi,%20I%20want%20to%20enquire%20about%20your%20academic%20services" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span>Get Started</span>
+          </a>
+        </div>
       </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section id="hero" class="d-flex align-items-center text-center text-md-start bg-primary text-white min-vh-100 pt-5">
-    <div class="container" data-aos="fade-up">
-      <div class="row align-items-center g-5">
-        <div class="col-md-6">
-          <h1 class="display-5 fw-bold">Expert Academic & Career Services – Anytime, Anywhere</h1>
-          <p class="lead mt-3">Research | Analysis | Assignments | Counselling | Support</p>
-          <div class="d-flex flex-column flex-sm-row gap-3 mt-4">
-            <a href="https://wa.me/919999999999?text=Hi,%20I%20want%20to%20enquire%20about%20your%20academic%20services" target="_blank" class="btn btn-warning btn-lg text-white"><i class="fa-brands fa-whatsapp"></i> Request on WhatsApp</a>
-            <a href="mailto:Admin@sirstudio.com?subject=Enquiry%20about%20Academic%20Services" class="btn btn-outline-light btn-lg"><i class="fa-solid fa-envelope"></i> Email Us</a>
+  <section id="hero" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center min-vh-100">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="hero-content">
+            <div class="badge bg-primary-subtle text-primary mb-4 px-4 py-2">
+              <i class="fas fa-star me-2"></i>Trusted by 1000+ Students
+            </div>
+            <h1 class="hero-title">Transform Your Academic Journey</h1>
+            <p class="hero-subtitle">Expert guidance for research, analysis, and career success. Your partner in academic excellence.</p>
+            <div class="hero-stats mb-5">
+              <div class="stat-item">
+                <span class="stat-number">500+</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">98%</span>
+                <span class="stat-label">Success Rate</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">24/7</span>
+                <span class="stat-label">Support</span>
+              </div>
+            </div>
+            <div class="hero-buttons">
+              <a href="https://wa.me/919999999999?text=Hi,%20I%20want%20to%20enquire%20about%20your%20academic%20services" target="_blank" class="btn btn-primary btn-lg me-4">
+                <i class="fab fa-whatsapp me-2"></i>Start Your Project
+              </a>
+              <a href="#services" class="btn btn-outline-primary btn-lg">
+                <i class="fas fa-play me-2"></i>Explore Services
+              </a>
+            </div>
           </div>
         </div>
-        <div class="col-md-6 text-center" data-aos="zoom-in">
-          <img src="https://images.unsplash.com/photo-1531497865143-84c01c7d15ba?auto=format&fit=crop&w=800&q=80" alt="Education" class="img-fluid rounded shadow-lg">
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="hero-image">
+            <img src="https://img.freepik.com/free-vector/students-studying-online_23-2148535002.jpg?w=800&t=st=1703123456~exp=1703124056~hmac=1234567890abcdef" alt="Academic Excellence" class="img-fluid rounded-4 shadow-lg">
+            <div class="floating-card">
+              <i class="fas fa-check-circle text-success"></i>
+              <span>Quality Assured</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <div class="hero-shape"></div>
   </section>
 
   <!-- Services Section -->
-  <section id="services" class="py-5 bg-light">
-    <div class="container" data-aos="fade-up">
-      <h2 class="text-center fw-bold mb-5">Services Offered</h2>
-      <div class="row g-4">
-        <!-- Service Card -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100 text-center shadow-sm">
-            <div class="card-body">
-              <i class="fa-solid fa-file-pen fa-3x text-primary mb-3"></i>
-              <h5 class="card-title fw-bold">Research Writing</h5>
-              <p class="card-text">Thesis, papers, and proposals crafted with scholarly precision.</p>
-              <a href="https://wa.me/919999999999?text=Hi,%20I%20am%20interested%20in%20Research%20Writing%20services" target="_blank" class="btn btn-outline-primary mt-3">Enquire via WhatsApp</a>
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center" data-aos="fade-up">
+          <h6 class="text-primary fw-semibold mb-3">OUR SERVICES</h6>
+          <h2 class="section-title">Comprehensive Academic Solutions</h2>
+          <p class="section-subtitle">From research to career guidance, we provide end-to-end support for your academic success.</p>
+        </div>
+      </div>
+      
+      <div class="row g-5">
+        <!-- Service Card 1 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card">
+            <div class="service-icon">
+              <svg class="service-logo" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Research Writing Icon -->
+                <rect x="10" y="15" width="40" height="30" rx="2" fill="var(--primary-color)" opacity="0.1"/>
+                <path d="M15 20H45M15 25H35M15 30H40M15 35H30" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round"/>
+                <path d="M20 45L25 40L30 45L35 40L40 45" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="25" cy="10" r="3" fill="var(--primary-color)"/>
+                <path d="M25 13V15" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round"/>
+              </svg>
             </div>
+            <h4>Research Writing</h4>
+            <p>Expert thesis, papers, and proposals crafted with scholarly precision and academic rigor.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Thesis & Dissertations</li>
+              <li><i class="fas fa-check"></i> Research Papers</li>
+              <li><i class="fas fa-check"></i> Literature Reviews</li>
+            </ul>
+            <a href="https://wa.me/919999999999?text=Hi,%20I%20am%20interested%20in%20Research%20Writing%20services" target="_blank" class="service-link">
+              Get Started <i class="fas fa-arrow-right"></i>
+            </a>
           </div>
         </div>
-        <!-- Service Card -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100 text-center shadow-sm">
-            <div class="card-body">
-              <i class="fa-solid fa-chart-column fa-3x text-primary mb-3"></i>
-              <h5 class="card-title fw-bold">Statistical Analysis</h5>
-              <p class="card-text">Proficient in SPSS, R, and Excel to uncover data insights.</p>
-              <a href="https://wa.me/919999999999?text=Hi,%20I%20need%20help%20with%20Statistical%20Analysis" target="_blank" class="btn btn-outline-primary mt-3">Enquire via WhatsApp</a>
+
+        <!-- Service Card 2 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card">
+            <div class="service-icon">
+              <svg class="service-logo" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Statistical Analysis Icon -->
+                <path d="M10 45L20 35L30 40L40 25L50 30" stroke="var(--primary-color)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="20" cy="35" r="3" fill="var(--primary-color)"/>
+                <circle cx="30" cy="40" r="3" fill="var(--primary-color)"/>
+                <circle cx="40" cy="25" r="3" fill="var(--primary-color)"/>
+                <circle cx="50" cy="30" r="3" fill="var(--primary-color)"/>
+                <rect x="10" y="10" width="40" height="8" rx="2" fill="var(--primary-color)" opacity="0.1"/>
+                <path d="M15 14H45M15 17H35" stroke="var(--primary-color)" stroke-width="1.5"/>
+              </svg>
             </div>
+            <h4>Statistical Analysis</h4>
+            <p>Advanced data analysis using SPSS, R, and Excel to uncover meaningful insights from your research.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> SPSS Analysis</li>
+              <li><i class="fas fa-check"></i> R Programming</li>
+              <li><i class="fas fa-check"></i> Data Visualization</li>
+            </ul>
+            <a href="https://wa.me/919999999999?text=Hi,%20I%20need%20help%20with%20Statistical%20Analysis" target="_blank" class="service-link">
+              Get Started <i class="fas fa-arrow-right"></i>
+            </a>
           </div>
         </div>
-        <!-- Service Card -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100 text-center shadow-sm">
-            <div class="card-body">
-              <i class="fa-solid fa-book-open fa-3x text-primary mb-3"></i>
-              <h5 class="card-title fw-bold">Academic Help</h5>
-              <p class="card-text">Assignments, notes, and projects for PG, UG, and school levels.</p>
-              <a href="https://wa.me/919999999999?text=Hi,%20I%20want%20Academic%20Help" target="_blank" class="btn btn-outline-primary mt-3">Enquire via WhatsApp</a>
+
+        <!-- Service Card 3 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-card">
+            <div class="service-icon">
+              <svg class="service-logo" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Academic Support Icon -->
+                <rect x="15" y="10" width="30" height="40" rx="2" fill="var(--primary-color)" opacity="0.1"/>
+                <path d="M20 20H40M20 25H35M20 30H38M20 35H32" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="30" cy="45" r="8" fill="var(--primary-color)" opacity="0.1"/>
+                <path d="M30 41V49M26 45H34" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round"/>
+              </svg>
             </div>
+            <h4>Academic Support</h4>
+            <p>Comprehensive assistance with assignments, projects, and coursework across all academic levels.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Assignment Help</li>
+              <li><i class="fas fa-check"></i> Project Guidance</li>
+              <li><i class="fas fa-check"></i> Study Materials</li>
+            </ul>
+            <a href="https://wa.me/919999999999?text=Hi,%20I%20want%20Academic%20Help" target="_blank" class="service-link">
+              Get Started <i class="fas fa-arrow-right"></i>
+            </a>
           </div>
         </div>
-        <!-- Service Card -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100 text-center shadow-sm">
-            <div class="card-body">
-              <i class="fa-solid fa-bullseye fa-3x text-primary mb-3"></i>
-              <h5 class="card-title fw-bold">Career Counselling</h5>
-              <p class="card-text">Personalized sessions and resume building for your career growth.</p>
-              <a href="https://wa.me/919999999999?text=Hi,%20I%20am%20interested%20in%20Career%20Counselling" target="_blank" class="btn btn-outline-primary mt-3">Enquire via WhatsApp</a>
+
+        <!-- Service Card 4 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-card">
+            <div class="service-icon">
+              <svg class="service-logo" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Career Counselling Icon -->
+                <circle cx="30" cy="20" r="8" fill="var(--primary-color)" opacity="0.1"/>
+                <path d="M30 12V28M26 16H34M26 24H34" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round"/>
+                <rect x="15" y="35" width="30" height="15" rx="2" fill="var(--primary-color)" opacity="0.1"/>
+                <path d="M20 40H40M20 44H35M20 48H30" stroke="var(--primary-color)" stroke-width="1.5"/>
+                <path d="M25 50L30 45L35 50" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             </div>
+            <h4>Career Counselling</h4>
+            <p>Personalized career guidance and resume building to accelerate your professional growth.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Career Planning</li>
+              <li><i class="fas fa-check"></i> Resume Building</li>
+              <li><i class="fas fa-check"></i> Interview Prep</li>
+            </ul>
+            <a href="https://wa.me/919999999999?text=Hi,%20I%20am%20interested%20in%20Career%20Counselling" target="_blank" class="service-link">
+              Get Started <i class="fas fa-arrow-right"></i>
+            </a>
           </div>
         </div>
-        <!-- Service Card -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100 text-center shadow-sm">
-            <div class="card-body">
-              <i class="fa-solid fa-pen-to-square fa-3x text-primary mb-3"></i>
-              <h5 class="card-title fw-bold">Exam & Admission Support</h5>
-              <p class="card-text">Coaching and form assistance to help you excel.</p>
-              <a href="https://wa.me/919999999999?text=Hi,%20I%20need%20Exam%20%26%20Admission%20Support" target="_blank" class="btn btn-outline-primary mt-3">Enquire via WhatsApp</a>
+
+        <!-- Service Card 5 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+          <div class="service-card">
+            <div class="service-icon">
+              <svg class="service-logo" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Exam Preparation Icon -->
+                <rect x="10" y="15" width="40" height="30" rx="2" fill="var(--primary-color)" opacity="0.1"/>
+                <path d="M15 25H45M15 30H40M15 35H35" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="30" cy="45" r="8" fill="var(--primary-color)" opacity="0.1"/>
+                <path d="M30 41V49M26 45H34" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round"/>
+                <path d="M20 10L25 15L30 10L35 15L40 10" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             </div>
+            <h4>Exam Preparation</h4>
+            <p>Comprehensive coaching and admission support to help you excel in competitive examinations.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Test Preparation</li>
+              <li><i class="fas fa-check"></i> Admission Guidance</li>
+              <li><i class="fas fa-check"></i> Study Strategies</li>
+            </ul>
+            <a href="https://wa.me/919999999999?text=Hi,%20I%20need%20Exam%20%26%20Admission%20Support" target="_blank" class="service-link">
+              Get Started <i class="fas fa-arrow-right"></i>
+            </a>
           </div>
         </div>
-        <!-- Service Card -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100 text-center shadow-sm">
-            <div class="card-body">
-              <i class="fa-solid fa-hand-holding-heart fa-3x text-primary mb-3"></i>
-              <h5 class="card-title fw-bold">CSR Activities</h5>
-              <p class="card-text">Education, training, and awareness drives for societal impact.</p>
-              <a href="https://wa.me/919999999999?text=Hi,%20I%20would%20like%20to%20discuss%20CSR%20Activities" target="_blank" class="btn btn-outline-primary mt-3">Enquire via WhatsApp</a>
+
+        <!-- Service Card 6 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+          <div class="service-card">
+            <div class="service-icon">
+              <svg class="service-logo" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- CSR Initiatives Icon -->
+                <circle cx="30" cy="20" r="12" fill="var(--primary-color)" opacity="0.1"/>
+                <path d="M30 8C35 8 38 12 38 20C38 28 35 32 30 32C25 32 22 28 22 20C22 12 25 8 30 8Z" stroke="var(--primary-color)" stroke-width="2"/>
+                <path d="M15 40C20 35 25 35 30 40C35 35 40 35 45 40" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="25" cy="15" r="2" fill="var(--primary-color)"/>
+                <circle cx="35" cy="15" r="2" fill="var(--primary-color)"/>
+                <path d="M30 18C30 19 29 20 28 20C27 20 26 19 26 18" stroke="var(--primary-color)" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
             </div>
+            <h4>CSR Initiatives</h4>
+            <p>Education, training, and awareness programs that create positive societal impact.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Community Education</li>
+              <li><i class="fas fa-check"></i> Skill Development</li>
+              <li><i class="fas fa-check"></i> Social Impact</li>
+            </ul>
+            <a href="https://wa.me/919999999999?text=Hi,%20I%20would%20like%20to%20discuss%20CSR%20Activities" target="_blank" class="service-link">
+              Get Started <i class="fas fa-arrow-right"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -129,68 +290,191 @@
   </section>
 
   <!-- About Section -->
-  <section id="about" class="py-5">
-    <div class="container" data-aos="fade-up">
-      <h2 class="text-center fw-bold mb-5">About Us</h2>
-      <div class="row align-items-center g-4">
-        <div class="col-md-6">
-          <img src="https://images.unsplash.com/photo-1581090700227-7211122a4862?auto=format&fit=crop&w=800&q=80" alt="Founder" class="img-fluid rounded shadow-sm">
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="about-content">
+            <h6 class="text-primary fw-semibold mb-3">ABOUT US</h6>
+            <h2 class="section-title">Empowering Academic Excellence</h2>
+            <p class="lead mb-5">At SIR STUDIO, we believe every student deserves access to world-class academic support. Our mission is to bridge the gap between potential and achievement.</p>
+            
+            <div class="about-features">
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <div>
+                  <h5>Quality Assurance</h5>
+                  <p>Rigorous quality checks ensure excellence in every deliverable</p>
+                </div>
+              </div>
+              
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div>
+                  <h5>Timely Delivery</h5>
+                  <p>We respect deadlines and deliver projects on time, every time</p>
+                </div>
+              </div>
+              
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-users"></i>
+                </div>
+                <div>
+                  <h5>Expert Team</h5>
+                  <p>Experienced professionals and researchers guide your journey</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="founder-info mt-5">
+              <div class="founder-avatar">
+                <img src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=100&t=st=1703123456~exp=1703124056~hmac=1234567890abcdef" alt="Dr. Sanjay" class="rounded-circle">
+              </div>
+              <div>
+                <h6 class="mb-1">Dr. Sanjay</h6>
+                <p class="text-muted mb-0">Founder & Lead Academic Advisor</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6">
-          <h4 class="fw-bold">Our Mission & Vision</h4>
-          <p>At SIR STUDIO, our mission is to empower students and professionals by providing expert academic and career services that drive success in a competitive world. We strive for excellence, integrity, and impact through our tailored solutions.</p>
-          <h4 class="fw-bold mt-4">Why Choose Us?</h4>
-          <ul class="list-unstyled">
-            <li><i class="fa-solid fa-check text-primary"></i> Personalized, timely support</li>
-            <li><i class="fa-solid fa-check text-primary"></i> Experienced professionals & researchers</li>
-            <li><i class="fa-solid fa-check text-primary"></i> Confidentiality & quality assurance</li>
-            <li><i class="fa-solid fa-check text-primary"></i> Affordable, transparent pricing</li>
-          </ul>
-          <p class="mt-3">Founded by <strong>Dr. Sanjay</strong>, SIR STUDIO blends academic rigor with real-world application to help you reach your goals.</p>
+        
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="about-image">
+            <img src="https://img.freepik.com/free-vector/teamwork-concept-illustration_114360-4223.jpg?w=800&t=st=1703123456~exp=1703124056~hmac=1234567890abcdef" alt="Our Team" class="img-fluid rounded-4 shadow-lg">
+            <div class="experience-badge">
+              <span class="years">5+</span>
+              <span class="text">Years of Excellence</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-5 bg-light">
-    <div class="container" data-aos="fade-up">
-      <h2 class="text-center fw-bold mb-4">Get in Touch</h2>
-      <p class="text-center mb-5">We are ready to help you succeed. Reach out through WhatsApp or Email for a quick response.</p>
-      <div class="d-flex justify-content-center gap-4 flex-wrap">
-        <a href="https://wa.me/919999999999?text=Hi,%20I%20want%20to%20enquire%20about%20your%20academic%20services" target="_blank" class="btn btn-success btn-lg px-4"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-        <a href="mailto:Admin@sirstudio.com?subject=Enquiry%20about%20Academic%20Services" class="btn btn-primary btn-lg px-4"><i class="fa-solid fa-envelope"></i> Email Us</a>
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center" data-aos="fade-up">
+          <h6 class="text-primary fw-semibold mb-3">GET IN TOUCH</h6>
+          <h2 class="section-title">Ready to Start Your Success Story?</h2>
+          <p class="section-subtitle">Let's discuss how we can help you achieve your academic and career goals.</p>
+        </div>
       </div>
-      <!-- Optional Email Form -->
-      <div class="row justify-content-center mt-5">
-        <div class="col-lg-8">
-          <form action="https://formsubmit.co/Admin@sirstudio.com" method="POST" class="bg-white p-4 rounded shadow-sm">
-            <!-- Honeypot -->
-            <input type="text" name="_honey" style="display:none">
-            <!-- Disable Captcha -->
-            <input type="hidden" name="_captcha" value="false">
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control" id="name" name="name" required>
+      
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="contact-card">
+            <div class="row">
+              <div class="col-lg-6" data-aos="fade-right">
+                <div class="contact-info">
+                  <h4>Let's Connect</h4>
+                  <p class="mb-5">Choose your preferred way to reach us. We're here to help 24/7.</p>
+                  
+                  <div class="contact-methods">
+                    <a href="https://wa.me/919999999999?text=Hi,%20I%20want%20to%20enquire%20about%20your%20academic%20services" target="_blank" class="contact-method whatsapp">
+                      <div class="method-icon">
+                        <i class="fab fa-whatsapp"></i>
+                      </div>
+                      <div>
+                        <h6>WhatsApp</h6>
+                        <p>Quick response within minutes</p>
+                      </div>
+                    </a>
+                    
+                    <a href="mailto:Admin@sirstudio.com?subject=Enquiry%20about%20Academic%20Services" class="contact-method email">
+                      <div class="method-icon">
+                        <i class="fab fa-google"></i>
+                      </div>
+                      <div>
+                        <h6>Gmail</h6>
+                        <p>Detailed consultation and quotes</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-lg-6" data-aos="fade-left">
+                <form action="https://formsubmit.co/Admin@sirstudio.com" method="POST" class="contact-form">
+                  <input type="text" name="_honey" style="display:none">
+                  <input type="hidden" name="_captcha" value="false">
+                  
+                  <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="service">Service Interest</label>
+                    <select class="form-control" id="service" name="service">
+                      <option value="">Select a service</option>
+                      <option value="Research Writing">Research Writing</option>
+                      <option value="Statistical Analysis">Statistical Analysis</option>
+                      <option value="Academic Help">Academic Help</option>
+                      <option value="Career Counselling">Career Counselling</option>
+                      <option value="Exam Preparation">Exam Preparation</option>
+                      <option value="CSR Activities">CSR Activities</option>
+                    </select>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                  </div>
+                  
+                  <button type="submit" class="btn btn-primary w-100">
+                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                  </button>
+                </form>
+              </div>
             </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" name="email" required>
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Send Message</button>
-          </form>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-primary text-white text-center py-3">
-    <p class="mb-0">&copy; <span id="year"></span> SIR STUDIO | All Rights Reserved</p>
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="footer-brand">
+            <div class="logo">
+              <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Graduation Cap Base -->
+                <path d="M20 8L32 14V22C32 26.4183 26.6274 30 20 30C13.3726 30 8 26.4183 8 22V14L20 8Z" fill="url(#gradient1)"/>
+                <!-- Tassel -->
+                <path d="M20 8L20 12M18 12L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <!-- Book -->
+                <rect x="12" y="18" width="16" height="8" rx="1" fill="url(#gradient2)"/>
+                <line x1="16" y1="20" x2="24" y2="20" stroke="currentColor" stroke-width="1"/>
+                <line x1="16" y1="22" x2="22" y2="22" stroke="currentColor" stroke-width="1"/>
+                <!-- Pen -->
+                <path d="M26 16L30 12L28 10L24 14" fill="url(#gradient3)"/>
+                <circle cx="30" cy="12" r="1" fill="currentColor"/>
+              </svg>
+              <span class="logo-text">SIR STUDIO</span>
+            </div>
+          </div>
+          <p class="text-muted mb-0">Empowering academic excellence through expert guidance and support.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="mb-0">&copy; <span id="year"></span> SIR STUDIO. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <!-- Bootstrap Bundle JS -->
