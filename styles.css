@@ -343,7 +343,47 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-image {
   position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  padding: 1rem;
 }
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  box-shadow: var(--shadow-lg);
+  transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.02);
+}
+
+.about-image{
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  padding: 1rem;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  box-shadow: var(--shadow-lg);
+  transition: transform 0.3s ease;
+}
+.hero-image img:hover {
+  transform: scale(1.02);
+}
+
 
 .floating-card {
   position: absolute;
@@ -359,6 +399,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   color: var(--text-primary);
   animation: float 3s ease-in-out infinite;
+  white-space: nowrap;
 }
 
 @keyframes float {
@@ -1129,4 +1170,305 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary-dark);
+}
+
+
+
+/* Add these responsive image styles to your existing styles.css file */
+
+/* Hero Section Images - Responsive Updates */
+.hero-image {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  box-shadow: var(--shadow-lg);
+  transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.02);
+}
+
+/* About Section Images - Responsive Updates */
+.about-image {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  box-shadow: var(--shadow-lg);
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.02);
+}
+
+/* Floating Card - Mobile Responsive */
+.floating-card {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: white;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  animation: float 3s ease-in-out infinite;
+  z-index: 10;
+  white-space: nowrap;
+}
+
+/* Experience Badge - Mobile Responsive */
+.experience-badge {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  background: white;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+  z-index: 10;
+}
+
+.experience-badge .years {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: 1;
+}
+
+.experience-badge .text {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Founder Avatar - Responsive */
+.founder-avatar {
+  flex-shrink: 0;
+}
+
+.founder-avatar img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border-color);
+}
+
+/* General Image Responsive Rules */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive breakpoints for images */
+@media (max-width: 1024px) {
+  .hero-image,
+  .about-image {
+    padding: 0.75rem;
+  }
+  
+  .floating-card {
+    top: 0.75rem;
+    right: 0.75rem;
+    padding: 0.6rem 0.8rem;
+    font-size: 0.8rem;
+  }
+  
+  .experience-badge {
+    bottom: 0.75rem;
+    left: 0.75rem;
+    padding: 0.6rem 0.8rem;
+  }
+  
+  .experience-badge .years {
+    font-size: 1.3rem;
+  }
+  
+  .experience-badge .text {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-image,
+  .about-image {
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-image img,
+  .about-image img {
+    border-radius: 1rem;
+  }
+  
+  .floating-card {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin: 1rem auto 0;
+    max-width: 200px;
+    justify-content: center;
+  }
+  
+  .experience-badge {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin: 1rem auto 0;
+    max-width: 150px;
+    display: inline-block;
+  }
+  
+  /* Hero section mobile layout */
+  .hero-section .row {
+    flex-direction: column-reverse;
+  }
+  
+  .hero-section .col-lg-6:first-child {
+    order: 2;
+    margin-top: 2rem;
+  }
+  
+  .hero-section .col-lg-6:last-child {
+    order: 1;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-image,
+  .about-image {
+    padding: 0.25rem;
+  }
+  
+  .hero-image img,
+  .about-image img {
+    border-radius: 0.75rem;
+  }
+  
+  .floating-card {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.75rem;
+    max-width: 180px;
+  }
+  
+  .experience-badge {
+    padding: 0.5rem 0.75rem;
+    max-width: 130px;
+  }
+  
+  .experience-badge .years {
+    font-size: 1.2rem;
+  }
+  
+  .experience-badge .text {
+    font-size: 0.65rem;
+  }
+  
+  .founder-avatar img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .floating-card {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.7rem;
+    max-width: 160px;
+    gap: 0.3rem;
+  }
+  
+  .experience-badge {
+    padding: 0.4rem 0.6rem;
+    max-width: 120px;
+  }
+  
+  .experience-badge .years {
+    font-size: 1.1rem;
+  }
+  
+  .experience-badge .text {
+    font-size: 0.6rem;
+  }
+  
+  .founder-avatar img {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+/* Additional responsive utilities for better mobile experience */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Ensure proper spacing on mobile */
+  .row.align-items-center {
+    align-items: stretch;
+  }
+  
+  .col-lg-6 {
+    margin-bottom: 2rem;
+  }
+  
+  .col-lg-6:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Fix for very small screens */
+@media (max-width: 375px) {
+  .hero-image,
+  .about-image {
+    padding: 0;
+  }
+  
+  .floating-card {
+    max-width: 140px;
+    font-size: 0.65rem;
+  }
+  
+  .experience-badge {
+    max-width: 100px;
+  }
+  
+  .experience-badge .years {
+    font-size: 1rem;
+  }
+  
+  .experience-badge .text {
+    font-size: 0.55rem;
+  }
 }
