@@ -25,6 +25,27 @@ body {
   color: var(--text-primary);
   scroll-behavior: smooth;
   background-color: #ffffff;
+  margin: 0 auto;
+  max-width: 100%;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  touch-action: manipulation;
+}
+
+/* Global Container Centering */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+/* Mobile-first approach */
+@media (max-width: 576px) {
+  .container {
+    padding: 0 1rem;
+  }
 }
 
 /* Typography */
@@ -32,6 +53,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .hero-title {
@@ -43,18 +65,21 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  text-align: center;
 }
 
 .section-title {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .section-subtitle {
   font-size: 1.125rem;
   color: var(--text-secondary);
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 /* Navigation */
@@ -206,11 +231,18 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 0.5rem;
   background: transparent;
   transition: all 0.3s ease;
+  min-height: 44px;
+  min-width: 44px;
+  touch-action: manipulation;
 }
 
 .navbar-toggler:focus {
   box-shadow: none;
   outline: none;
+}
+
+.navbar-toggler:hover {
+  background: var(--secondary-color);
 }
 
 .navbar-toggler-icon {
@@ -246,6 +278,13 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10rem 0 8rem;
   position: relative;
   overflow: hidden;
+  text-align: center;
+}
+
+.hero-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .hero-section::before {
@@ -272,6 +311,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-stats {
   display: flex;
+  justify-content: center;
   gap: 2rem;
   margin-bottom: 2rem;
 }
@@ -296,6 +336,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-buttons {
   display: flex;
+  justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
 }
@@ -346,6 +387,10 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  touch-action: manipulation;
+  user-select: none;
+  cursor: pointer;
+  min-height: 44px;
 }
 
 .btn-primary {
@@ -376,6 +421,13 @@ h1, h2, h3, h4, h5, h6 {
 .services-section {
   padding: 8rem 0;
   background: white;
+  text-align: center;
+}
+
+.services-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .service-card {
@@ -388,6 +440,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   position: relative;
   overflow: hidden;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .service-card::before {
@@ -419,7 +473,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem auto;
   color: white;
   font-size: 1.5rem;
   position: relative;
@@ -485,8 +539,15 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--secondary-color);
 }
 
+.about-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
 .about-content {
   padding-right: 4rem;
+  text-align: left;
 }
 
 .about-features {
@@ -576,6 +637,13 @@ h1, h2, h3, h4, h5, h6 {
 .contact-section {
   padding: 8rem 0;
   background: white;
+  text-align: center;
+}
+
+.contact-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .contact-card {
@@ -584,6 +652,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 4rem;
   box-shadow: var(--shadow-xl);
   border: 1px solid var(--border-color);
+  margin: 0 auto;
 }
 
 .contact-info h4 {
@@ -681,6 +750,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
   transition: all 0.3s ease;
   background: white;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  touch-action: manipulation;
+  min-height: 44px;
 }
 
 .form-control:focus {
@@ -694,6 +768,13 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--text-primary);
   color: white;
   padding: 3rem 0;
+  text-align: center;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .footer-brand {
@@ -721,54 +802,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: 2.5rem;
+@media (max-width: 1024px) {
+  .navbar .container {
+    padding: 0 1.5rem;
   }
   
-  .section-title {
-    font-size: 2rem;
-  }
-  
-  .hero-stats {
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  .hero-buttons {
-    flex-direction: column;
-  }
-  
-  .about-content {
-    padding-right: 0;
-    margin-bottom: 3rem;
-  }
-  
-  .contact-form {
-    padding-left: 0;
-    margin-top: 3rem;
-  }
-  
-  .floating-card {
-    position: static;
-    margin-top: 1rem;
-  }
-  
-  .experience-badge {
-    position: static;
-    margin-top: 1rem;
-  }
-  
-  .service-card {
-    padding: 2.5rem 2rem;
-  }
-  
-  .contact-card {
-    padding: 3rem 2rem;
-  }
-}
-
-@media (max-width: 576px) {
   .hero-section {
     padding: 8rem 0 6rem;
   }
@@ -778,42 +816,286 @@ h1, h2, h3, h4, h5, h6 {
   .contact-section {
     padding: 6rem 0;
   }
-  
-  .service-card {
-    padding: 2rem 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+    text-align: center !important;
+    line-height: 1.2;
   }
   
-  .contact-card {
-    padding: 2rem 1.5rem;
+  .section-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .hero-stats {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
   
   .hero-buttons .btn {
     width: 100%;
+    max-width: 300px;
+    padding: 0.875rem 1.5rem;
+  }
+  
+  .about-content {
+    padding-right: 0;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  .contact-form {
+    padding-left: 0;
+    margin-top: 3rem;
+    text-align: left;
+  }
+  
+  .floating-card {
+    position: static;
+    margin: 1rem auto 0;
+    max-width: 200px;
+  }
+  
+  .experience-badge {
+    position: static;
+    margin: 1rem auto 0;
+    max-width: 150px;
+  }
+  
+  .service-card {
+    padding: 2rem 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-card {
+    padding: 2.5rem 1.5rem;
+  }
+  
+  .hero-subtitle {
+    text-align: center !important;
+    font-size: 1.1rem;
+  }
+  
+  .hero-content {
+    text-align: center;
+  }
+  
+  .navbar-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  
+  .nav-link {
+    text-align: center;
+    padding: 0.75rem 1rem !important;
+  }
+  
+  .cta-button {
+    margin-left: 0 !important;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 6rem 0 4rem;
+  }
+  
+  .services-section,
+  .about-section,
+  .contact-section {
+    padding: 4rem 0;
+  }
+  
+  .hero-title {
+    font-size: 1.8rem;
+    line-height: 1.1;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .section-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .service-card {
+    padding: 1.5rem 1rem;
     margin-bottom: 1rem;
+  }
+  
+  .contact-card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .hero-buttons .btn {
+    width: 100%;
+    margin-bottom: 0.75rem;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
   }
   
   .hero-buttons .btn:last-child {
     margin-bottom: 0;
   }
+  
+  .hero-stats {
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .stat-number {
+    font-size: 1.5rem;
+  }
+  
+  .stat-label {
+    font-size: 0.75rem;
+  }
+  
+  .service-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .service-logo {
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .service-card h4 {
+    font-size: 1.1rem;
+  }
+  
+  .service-card p {
+    font-size: 0.85rem;
+  }
+  
+  .service-features {
+    font-size: 0.8rem;
+  }
+  
+  .contact-info h4 {
+    font-size: 1.2rem;
+  }
+  
+  .contact-method {
+    padding: 1rem;
+  }
+  
+  .method-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .form-control {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  
+  .founder-info {
+    padding: 1rem;
+  }
+  
+  .founder-avatar img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
 
 @media (max-width: 480px) {
   .hero-title {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    line-height: 1.1;
   }
   
   .section-title {
-    font-size: 1.75rem;
+    font-size: 1.3rem;
+  }
+  
+  .section-subtitle {
+    font-size: 0.85rem;
+  }
+  
+  .hero-section {
+    padding: 5rem 0 3rem;
+  }
+  
+  .services-section,
+  .about-section,
+  .contact-section {
+    padding: 3rem 0;
   }
   
   .service-icon {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1rem;
   }
   
   .service-logo {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  
+  .service-card {
+    padding: 1.25rem 0.75rem;
+  }
+  
+  .service-card h4 {
+    font-size: 1rem;
+  }
+  
+  .service-card p {
+    font-size: 0.8rem;
+  }
+  
+  .contact-card {
+    padding: 1.25rem 0.75rem;
+  }
+  
+  .hero-buttons .btn {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.85rem;
+  }
+  
+  .stat-number {
+    font-size: 1.3rem;
+  }
+  
+  .stat-label {
+    font-size: 0.7rem;
+  }
+  
+  .navbar .container {
+    padding: 0 0.5rem;
+  }
+  
+  .logo-text {
+    font-size: 1rem;
+  }
+  
+  .logo-icon {
+    width: 28px;
+    height: 28px;
   }
 }
 
